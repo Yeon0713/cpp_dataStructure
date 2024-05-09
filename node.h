@@ -9,6 +9,15 @@ public:
     value_ = value;
     next_ = nullptr;
   }
+  int& getVal() {
+    return value_;
+  }
+  Node* getNext() {
+    return next_;
+  }
+  void setNext(Node* node) {
+    next_ = node;
+  }
 
 private:
   int value_;
